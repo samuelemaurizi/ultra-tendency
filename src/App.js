@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
+
+import Routing from './components/routing/Routing';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div>
-      <h1>Ultra Tendency</h1>
-    </div>
+    <Fragment>
+      <h2>Navbar here</h2>
+      <Routing />
+      <Footer />
+    </Fragment>
   );
 }
 
