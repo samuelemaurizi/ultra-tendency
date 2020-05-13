@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-
 import './Login.css';
+
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -22,8 +23,10 @@ const Login = () => {
 
   return (
     <Fragment>
-      <h3>Continue with Facebook</h3>
-      <h3>Continue with Google</h3>
+      <div className='social-login'>
+        <SocialLogin social='facebook' />
+        <SocialLogin social='google' />
+      </div>
       <p className='intro-text'>or use email instead</p>
       <form className='form' onSubmit={onSubmit}>
         <div className='form__group'>

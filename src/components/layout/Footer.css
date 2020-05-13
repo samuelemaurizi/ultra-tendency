@@ -1,6 +1,6 @@
 .footer__content {
   text-align: center;
-  color: var(--clr-light-gray);
+  color: var(--clr-gray-7);
 }
 
 .footer__content div {
@@ -10,7 +10,7 @@
 .footer__content a {
   padding: 0.3rem;
   margin-left: 1.2rem;
-  color: var(--clr-light-gray);
+  color: var(--clr-gray-7);
   text-decoration: none;
 }
 

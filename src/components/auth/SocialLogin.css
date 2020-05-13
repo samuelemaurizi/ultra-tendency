@@ -1,0 +1,35 @@
+.fa-facebook {
+  color: #0078ff;
+}
+
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-btn {
+  padding: var(--p1-5);
+  color: var(--clr-gray-5);
+  background-color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: var(--br-5);
+}
+
+.social-btn:nth-child(1) {
+  margin: var(--mtb-08);
+}
+
+.social-btn i {
+  margin-right: 1rem;
+}

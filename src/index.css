@@ -13,11 +13,15 @@
   --clr-primary-light: #b1a3e6;
   --clr-bg-light: #eeeef2;
   --clr-accent: #e40a51;
-  --clr-light-gray: #a7a7a7;
+  --clr-gray-7: #a7a7a7;
+  --clr-gray-5: #575757;
+  --p1-5: 1.5rem;
+  --mtb-08: 0.8rem 0;
+  --br-5: 5px;
 }
 
 body {
-  color: #333;
+  color: --clr-gray-5;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
