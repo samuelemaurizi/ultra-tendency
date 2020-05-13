@@ -1,9 +1,12 @@
 import React from 'react';
+import './NotFound.css';
+
+import Logo from './Logo';
 
 const NotFound = () => {
   return (
-    <div className='container'>
-      <h1>Not found page</h1>
+    <div className='container not-found'>
+      <Logo />
     </div>
   );
 };

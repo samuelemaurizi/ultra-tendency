@@ -8,10 +8,11 @@ const Routing = () => {
   return (
     <Switch>
       <Route exact path='/' render={Landing} />
+      <Route exact path='/login' render={NotFound} />
       <Route exact path='/about' render={NotFound} />
       <Route exact path='/terms' render={NotFound} />
       <Route exact path='/privacy' render={NotFound} />
-      <Route exact path='/contac' render={NotFound} />
+      <Route exact path='/contact' render={NotFound} />
     </Switch>
   );
 };
