@@ -7,7 +7,6 @@ import Footer from './components/layout/Footer';
 function App() {
   return (
     <Fragment>
-      <h2>Navbar here</h2>
       <Routing />
       <Footer />
     </Fragment>

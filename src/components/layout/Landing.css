@@ -1,0 +1,37 @@
+.landing {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../../img/hero-bg.png') no-repeat;
+  background-size: cover;
+  background-position: top right;
+  background-color: var(--clr-bg-light);
+  overflow: hidden;
+}
+
+.landing__content {
+  max-width: 350px;
+  margin: 2rem 0;
+  /* border: 2px solid red; */
+}
+
+.landing__content-header {
+  margin-bottom: 2rem;
+}
+
+.landing__content-header h1 {
+  margin: 1.5rem 0 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.landing__content-header p {
+  width: 60%;
+  line-height: 1.3;
+}
+
+@media (min-width: 1100px) {
+  .landing {
+    background-size: contain;
+  }
+}
