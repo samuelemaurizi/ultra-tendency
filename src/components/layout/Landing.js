@@ -2,7 +2,7 @@ import React from 'react';
 import './Landing.css';
 
 import Logo from './Logo';
-import Login from '../auth/Login';
+import Login from '../auth/Signup';
 
 const Landing = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import './Login.css';
+import './Signup.css';
 
 import SocialLogin from './SocialLogin';
 
@@ -18,7 +18,7 @@ const Login = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(email, password);
+    // console.log(email, password);
   };
 
   return (

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 *,
 *::before,
@@ -15,6 +15,7 @@
   --clr-accent: #e40a51;
   --clr-gray-7: #a7a7a7;
   --clr-gray-5: #575757;
+  --clr-gray-3: #333;
   --p1-5: 1.5rem;
   --mtb-08: 0.8rem 0;
   --br-5: 5px;
@@ -22,7 +23,7 @@
 
 body {
   color: --clr-gray-5;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
