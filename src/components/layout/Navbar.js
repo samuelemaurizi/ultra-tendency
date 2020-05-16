@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 import Logo from './Logo';
-import UserProfile from './UserProfile';
+import UserProfile from '../users/UserProfile';
 
 const Navbar = () => {
   return (
