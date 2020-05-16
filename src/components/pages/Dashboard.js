@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import './Dashboard.css';
 
 import Navbar from '../layout/Navbar';
+import Avatar from '../users/Avatar';
 
 const Dashboard = () => {
   return (
@@ -124,6 +125,7 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className='comments__form'>
+                <Avatar />
                 <div className='avatar'></div>
                 <form>
                   <input type='text' placeholder='Write something...' />

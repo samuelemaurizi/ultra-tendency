@@ -1,7 +1,9 @@
 import React from 'react';
 import './UserProfile.css';
 
-const UserProfile = ({ username }) => {
+import Avatar from './Avatar';
+
+const UserProfile = ({ username, userImg }) => {
   return (
     <div className='profile-container'>
       <div className='user-img'></div>
