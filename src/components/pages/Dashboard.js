@@ -38,7 +38,7 @@ const Dashboard = () => {
           </header>
 
           <div className='content'>
-            <div className='content__text'>
+            <div className='content__text container'>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
                 possimus asperiores totam cupiditate rem, labore eligendi
@@ -49,8 +49,8 @@ const Dashboard = () => {
               </p>
             </div>
             <div className='content__grid'>
-              <div className='content__grid-img'></div>
-              <blockquote className='content__grid-text'>
+              <div className='content__grid-img-one'></div>
+              <div className='content__grid-text'>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Aperiam reiciendis, quibusdam doloribus maxime ut itaque
@@ -58,7 +58,8 @@ const Dashboard = () => {
                   ipsum non magni?
                 </p>
                 <cite>Noaa</cite>
-              </blockquote>
+              </div>
+              <div className='content__grid-img-two'></div>
               <div className='content__grid-text'>
                 <h2>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
@@ -71,9 +72,8 @@ const Dashboard = () => {
                   ipsum non magni?
                 </p>
               </div>
-              <div className='content__grid-img'></div>
             </div>
-            <div className='content__text'>
+            <div className='content__text container'>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
                 rerum labore placeat, illum dolore numquam quasi voluptatibus
@@ -90,15 +90,20 @@ const Dashboard = () => {
           </div>
 
           <div className='comments'>
-            <div className='container'>
-              <div className='comments__header'>
-                <h1>23 COMMENT</h1>
-                <div className='comments__header-links'>
-                  <button className='btn'>best</button>
-                  <button className='btn'>newest</button>
-                  <button className='btn'>oldest</button>
+            <div className='comments__header-wrap'>
+              <div className='container'>
+                <div className='comments__header'>
+                  <h2>23 COMMENTS</h2>
+                  <div className='comments__header-links'>
+                    <button className='btn comments__btn active'>best</button>
+                    <button className='btn comments__btn'>newest</button>
+                    <button className='btn comments__btn'>oldest</button>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className='container'>
+              {/* COMMENTS COMPONENT HERE */}
               <div className='comments__body'>
                 <div className='comment'>
                   <h3>Name</h3>
