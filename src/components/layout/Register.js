@@ -1,5 +1,5 @@
 import React from 'react';
-import './Landing.css';
+import './Register.css';
 
 import Logo from './Logo';
 import Login from '../auth/Signup';

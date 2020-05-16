@@ -40,12 +40,24 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='container'>
         <div className='nav__links'>
-          <h3>main links</h3>
-        </div>
-        <div className='nav__explore'>
-          <button>Explore</button>
+          <div className='nav__links-categories'>
+            <Link to='/trending' className='active-link'>
+              Trending
+            </Link>
+            <Link to='/foryou'>For you</Link>
+            <Link to='/cooking'>Cooking</Link>
+            <Link to='/nature'>Nature</Link>
+            <Link to='/science'>Science</Link>
+            <Link to='/travel'>Travel</Link>
+            <Link to='/climate'>Climate</Link>
+            <Link to='/music'>Music</Link>
+            <Link to='/people'>People</Link>
+          </div>
+          <Link to='/explore' className='btn nav__links-btn'>
+            Explore
+          </Link>
         </div>
       </div>
     </div>
