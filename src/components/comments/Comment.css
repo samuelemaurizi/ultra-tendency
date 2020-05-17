@@ -1,0 +1,35 @@
+.comment-container {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.comment__body {
+  padding-top: 0.7rem;
+  padding-left: 1.5rem;
+}
+
+.comment__body-name {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.comment__body-icons {
+  margin-top: 1rem;
+}
+
+.comment__body-icons span {
+  margin-right: 2rem;
+}
+
+.comment__body-icons span i {
+  margin-right: 0.5rem;
+}
+
+.liked {
+  color: var(--clr-accent);
+}

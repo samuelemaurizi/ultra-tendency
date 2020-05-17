@@ -1,10 +1,14 @@
 import React, { Fragment, useContext } from 'react';
 import './Story.css';
 
+import { CommentsContext } from '../../context/comments/commentsContext';
 import Navbar from '../layout/Navbar';
-import Avatar from '../users/Avatar';
+import Comments from '../comments/Comments';
+import CommentForm from '../comments/CommentForm';
 
 const Story = () => {
+  const [comments, setComments] = useContext(CommentsContext);
+
   return (
     <div>
       <Navbar />
@@ -105,34 +109,8 @@ const Story = () => {
               </div>
             </div>
             <div className='container'>
-              {/* COMMENTS COMPONENT HERE */}
-              <div className='comments__body'>
-                <div className='comment'>
-                  <h3>Name</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tempore, quae?
-                  </p>
-                  <div className='comment__icons'>
-                    <div className='comment__icons-likes'>
-                      <i className='far fa-heart'></i>
-                      <span>12</span>
-                    </div>
-                    <div className='comment__icons-date'>
-                      <i className='far fa-calendar'></i>
-                      <span>20 days ago</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='comments__form'>
-                <Avatar />
-                <div className='avatar'></div>
-                <form>
-                  <input type='text' placeholder='Write something...' />
-                  <button className='btn'>Submit</button>
-                </form>
-              </div>
+              <Comments comments={comments} />
+              <CommentForm />
             </div>
           </div>
         </main>
