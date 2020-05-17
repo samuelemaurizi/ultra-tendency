@@ -6,7 +6,6 @@
 
 .footer__content a {
   padding: 0.3rem;
-  margin-left: 1.2rem;
   color: var(--clr-gray-7);
   text-decoration: none;
 }
@@ -28,7 +27,10 @@
 @media (min-width: 766px) {
   .footer__links {
     display: block;
-    margin-bottom: 0;
+  }
+
+  .footer__links a {
+    margin-left: 1.2rem;
   }
 }
 
@@ -39,6 +41,7 @@
     justify-content: space-between;
   }
 
+  .footer__links,
   .footer__links a {
     margin-bottom: 0;
   }

@@ -1,19 +1,14 @@
-import React, { useContext } from 'react';
+import React, { Fragment } from 'react';
 
-import { CommentsContext } from '../../context/comments/commentsContext';
+import Navbar from '../layout/Navbar';
+import Cards from '../cards/Cards';
 
 const Explore = () => {
-  const [comments, setComments] = useContext(CommentsContext);
-
   return (
-    <div>
-      <h1>Explore</h1>
-      <ul>
-        {comments.map((comment, i) => (
-          <h3 key={i}>{comment.comment}</h3>
-        ))}
-      </ul>
-    </div>
+    <Fragment>
+      <Navbar />
+      <Cards />
+    </Fragment>
   );
 };
 

@@ -1,0 +1,39 @@
+.card {
+  align-self: start;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 1.8rem 2.2rem;
+}
+
+.card__body h1 {
+  margin-bottom: 0.6rem;
+}
+
+.card__btn {
+  padding: 0.8rem 2rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--clr-gray-9);
+  background-color: var(--clr-primary);
+  border-radius: 200px;
+}
+
+.card__btn.following {
+  color: var(--clr-primary);
+  background: none;
+  border: 2px solid var(--clr-primary);
+}

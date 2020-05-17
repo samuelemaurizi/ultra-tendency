@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
+import { UserContext } from '../../context/user/userContext';
 import Logo from './Logo';
 import UserProfile from '../users/UserProfile';
 
 const Navbar = () => {
+  const [user, setUser] = useContext(UserContext);
+
   return (
     <div className='nav'>
       <div className='nav-user-wrap'>
@@ -35,7 +38,7 @@ const Navbar = () => {
             <div className='nav-user__right'>
               <input type='text' />
               <i className='fas fa-search'></i>
-              <UserProfile username='John Doe' />
+              <UserProfile user={user} />
             </div>
           </div>
         </div>

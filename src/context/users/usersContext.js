@@ -1,9 +1,9 @@
 import React, { useState, createContext } from 'react';
 
-export const CommentsContext = createContext();
+export const UsersContext = createContext();
 
-export const CommentsProvider = ({ children }) => {
-  const [comments, setComments] = useState([
+export const UsersProvider = ({ children }) => {
+  const [users, setUsers] = useState([
     {
       image: 'https://picsum.photos/200?random=1',
       name: 'Miriam Vog',
@@ -33,8 +33,8 @@ export const CommentsProvider = ({ children }) => {
   ]);
 
   return (
-    <CommentsContext.Provider value={[comments, setComments]}>
+    <UsersContext.Provider value={[users, setUsers]}>
       {children}
-    </CommentsContext.Provider>
+    </UsersContext.Provider>
   );
 };

@@ -3,11 +3,11 @@ import './UserProfile.css';
 
 import Avatar from './Avatar';
 
-const UserProfile = ({ username, userImg }) => {
+const UserProfile = ({ user }) => {
   return (
     <div className='profile-container'>
-      <div className='user-img'></div>
-      <p>{username}</p>
+      <Avatar userImg={user.image} />
+      <p>{user.name}</p>
     </div>
   );
 };

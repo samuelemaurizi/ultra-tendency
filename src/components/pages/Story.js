@@ -1,14 +1,14 @@
 import React, { Fragment, useContext } from 'react';
 import './Story.css';
 
-import { CommentsContext } from '../../context/comments/commentsContext';
+import { UsersContext } from '../../context/users/usersContext';
 import { UserContext } from '../../context/user/userContext';
 import Navbar from '../layout/Navbar';
 import Comments from '../comments/Comments';
 import CommentForm from '../comments/CommentForm';
 
 const Story = () => {
-  const [comments, setComments] = useContext(CommentsContext);
+  const [users, setUsers] = useContext(UsersContext);
   const [user, setUser] = useContext(UserContext);
 
   return (
@@ -98,7 +98,7 @@ const Story = () => {
           </div>
 
           <div className='comments-wrap'>
-            <Comments comments={comments} />
+            <Comments comments={users} />
             <CommentForm user={user} />
           </div>
         </main>
