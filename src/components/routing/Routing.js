@@ -9,14 +9,14 @@ import Explore from '../pages/Explore';
 const Routing = () => {
   return (
     <Switch>
-      <Route exact path='/' render={Landing} />
-      <Route exact path='/login' render={NotFound} />
-      <Route exact path='/story' render={Story} />
-      <Route exact path='/explore' render={Explore} />
-      <Route exact path='/about' render={NotFound} />
-      <Route exact path='/terms' render={NotFound} />
-      <Route exact path='/privacy' render={NotFound} />
-      <Route exact path='/contact' render={NotFound} />
+      <Route exact path='/' component={Landing} />
+      <Route exact path='/login' component={NotFound} />
+      <Route exact path='/story' component={Story} />
+      <Route exact path='/explore' component={Explore} />
+      <Route exact path='/about' component={NotFound} />
+      <Route exact path='/terms' component={NotFound} />
+      <Route exact path='/privacy' component={NotFound} />
+      <Route exact path='/contact' component={NotFound} />
     </Switch>
   );
 };

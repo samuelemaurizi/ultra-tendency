@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import './Story.css';
 
 import Navbar from '../layout/Navbar';
@@ -8,6 +8,7 @@ const Story = () => {
   return (
     <div>
       <Navbar />
+
       <Fragment>
         <main>
           <header className='header'>
