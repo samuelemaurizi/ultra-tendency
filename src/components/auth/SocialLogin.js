@@ -7,7 +7,7 @@ const SocialLogin = ({ social }) => {
     <Fragment>
       <Link to='/story' className='social-btn'>
         <i className={'fab fa-' + social}></i>
-        Continue with {social}
+        <span>Continue with {social}</span>
       </Link>
     </Fragment>
   );

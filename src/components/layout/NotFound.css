@@ -2,6 +2,6 @@
   height: 100vh;
   padding-top: 4rem;
   background: url('../../img/page-not-found.png') no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }

@@ -18,19 +18,19 @@ const Navbar = () => {
               <div>
                 <Logo />
               </div>
-              <Link to='/channels' className='active'>
+              <Link to='/login' className='active'>
                 <i className='fas fa-th-large'></i>
                 channels
               </Link>
-              <Link to='/channels'>
+              <Link to='/login'>
                 <i className='fas fa-bookmark'></i>
                 bookmarks
               </Link>
-              <Link to='/channels'>
+              <Link to='/login'>
                 <i className='fas fa-chart-pie'></i>
                 overview
               </Link>
-              <Link to='/channels'>
+              <Link to='/login'>
                 <i className='fas fa-puzzle-piece'></i>
                 widgets
               </Link>
@@ -49,14 +49,14 @@ const Navbar = () => {
             <Link to='/trending' className='active-link'>
               Trending
             </Link>
-            <Link to='/foryou'>For you</Link>
-            <Link to='/cooking'>Cooking</Link>
-            <Link to='/nature'>Nature</Link>
-            <Link to='/science'>Science</Link>
-            <Link to='/travel'>Travel</Link>
-            <Link to='/climate'>Climate</Link>
-            <Link to='/music'>Music</Link>
-            <Link to='/people'>People</Link>
+            <Link to='/login'>For you</Link>
+            <Link to='/login'>Cooking</Link>
+            <Link to='/login'>Nature</Link>
+            <Link to='/login'>Science</Link>
+            <Link to='/login'>Travel</Link>
+            <Link to='/login'>Climate</Link>
+            <Link to='/login'>Music</Link>
+            <Link to='/login'>People</Link>
           </div>
           <Link to='/explore' className='btn nav__links-btn'>
             Explore

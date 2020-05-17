@@ -19,10 +19,11 @@
 
 .social-btn {
   padding: var(--p1-5);
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
   color: var(--clr-gray-5);
   background-color: #fff;
-  font-size: 1.5rem;
-  text-decoration: none;
   border-radius: var(--br-5);
 }
 
@@ -32,4 +33,18 @@
 
 .social-btn i {
   margin-right: 1rem;
+}
+
+.social-btn span {
+  display: block;
+}
+
+@media (min-width: 450px) {
+  .social-btn {
+    text-align: left;
+  }
+
+  .social-btn span {
+    display: inline-block;
+  }
 }
