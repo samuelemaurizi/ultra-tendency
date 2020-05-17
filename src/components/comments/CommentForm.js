@@ -1,13 +1,15 @@
 import React from 'react';
+import './CommentForm.css';
 
 import Avatar from '../users/Avatar';
 
-const CommentForm = () => {
+const CommentForm = ({ user }) => {
   return (
     <div className='form-container'>
-      <form>
+      <Avatar userImg={user.image} />
+      <form className='form-group'>
         <input type='text' placeholder='Write something...' />
-        <button className='btn'>Submit</button>
+        <button className='btn form-btn'>Submit</button>
       </form>
     </div>
   );

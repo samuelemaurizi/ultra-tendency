@@ -159,39 +159,6 @@
   END CONTENT VIDEO
 */
 
-/* 
-  CONTENT COMMENTS
-*/
-.comments__header-wrap {
-  background-color: var(--clr-primary);
-}
-
-.comments__header {
-  text-align: center;
-  color: var(--clr-gray-9);
-}
-
-.comments__header h2 {
-  margin-bottom: 0.5rem;
-}
-
-.comments__btn {
-  padding: 0.7rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--clr-primary-light);
-  background: none;
-  border: none;
-}
-
-.comments__btn.active {
-  color: var(--clr-bg-light);
-}
-/* 
-  CONTENT COMMENTS
-*/
-
 @media (min-width: 520px) {
   .header__title {
     padding-bottom: 3rem;
@@ -213,17 +180,6 @@
   }
 
   .content__grid {
-    margin-bottom: 0;
-  }
-
-  .comments__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5rem 0;
-  }
-
-  .comments__header h2 {
     margin-bottom: 0;
   }
 }
@@ -281,9 +237,5 @@
   .content__grid-img-two {
     grid-column: 2 / 3;
     grid-row: 2;
-  }
-
-  .comments__btn {
-    margin-left: 1.5rem;
   }
 }

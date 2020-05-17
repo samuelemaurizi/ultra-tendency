@@ -3,14 +3,12 @@
   margin: 0 auto;
   margin-bottom: 1rem;
   padding: 1.5rem 2.5rem;
-  display: flex;
   background-color: #fff;
   border-radius: 10px;
 }
 
 .comment__body {
   padding-top: 0.7rem;
-  padding-left: 1.5rem;
 }
 
 .comment__body-name {
@@ -19,11 +17,13 @@
 }
 
 .comment__body-icons {
+  display: flex;
+  flex-direction: column;
   margin-top: 1rem;
 }
 
 .comment__body-icons span {
-  margin-right: 2rem;
+  margin-top: 1rem;
 }
 
 .comment__body-icons span i {
@@ -32,4 +32,25 @@
 
 .liked {
   color: var(--clr-accent);
+}
+
+@media (min-width: 600px) {
+  .comment-container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  .comment__body {
+    padding-left: 1.5rem;
+  }
+
+  .comment__body-icons {
+    display: inline-block;
+  }
+
+  .comment__body-icons span {
+    margin-right: 2rem;
+  }
 }

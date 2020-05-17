@@ -93,7 +93,7 @@
 
 .nav__links-btn {
   color: var(--clr-primary);
-  background-color: var(--clr-primary-lighter);
+  background-color: var(--clr-primary-light-alpha);
 }
 
 .disabled {

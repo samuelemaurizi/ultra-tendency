@@ -14,6 +14,7 @@
 .footer__links {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .footer__links a {
@@ -27,6 +28,7 @@
 @media (min-width: 766px) {
   .footer__links {
     display: block;
+    margin-bottom: 0;
   }
 }
 

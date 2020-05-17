@@ -2,12 +2,14 @@ import React, { Fragment, useContext } from 'react';
 import './Story.css';
 
 import { CommentsContext } from '../../context/comments/commentsContext';
+import { UserContext } from '../../context/user/userContext';
 import Navbar from '../layout/Navbar';
 import Comments from '../comments/Comments';
 import CommentForm from '../comments/CommentForm';
 
 const Story = () => {
   const [comments, setComments] = useContext(CommentsContext);
+  const [user, setUser] = useContext(UserContext);
 
   return (
     <div>
@@ -95,23 +97,9 @@ const Story = () => {
             </div>
           </div>
 
-          <div className='comments'>
-            <div className='comments__header-wrap'>
-              <div className='container'>
-                <div className='comments__header'>
-                  <h2>23 COMMENTS</h2>
-                  <div className='comments__header-links'>
-                    <button className='btn comments__btn active'>best</button>
-                    <button className='btn comments__btn'>newest</button>
-                    <button className='btn comments__btn'>oldest</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='container'>
-              <Comments comments={comments} />
-              <CommentForm />
-            </div>
+          <div className='comments-wrap'>
+            <Comments comments={comments} />
+            <CommentForm user={user} />
           </div>
         </main>
       </Fragment>

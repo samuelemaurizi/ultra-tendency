@@ -11,6 +11,7 @@
 :root {
   --clr-primary: #6648cd;
   --clr-primary-light: #b1a3e6;
+  --clr-primary-light-alpha: #b2a3e663;
   --clr-primary-lighter: #f7f5ff;
   --clr-bg-light: #eeeef2;
   --clr-accent: #e40a51;
