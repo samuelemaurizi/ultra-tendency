@@ -9,6 +9,21 @@
   overflow: hidden;
 }
 
+.card:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+
+.card:nth-child(3) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.card:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
+
 .card img {
   width: 100%;
   object-fit: cover;
@@ -36,4 +51,22 @@
   color: var(--clr-primary);
   background: none;
   border: 2px solid var(--clr-primary);
+}
+
+@media (min-width: 1024px) {
+  .card:nth-child(2) {
+    grid-row: 1 / 5;
+  }
+
+  .card:nth-child(3) {
+    grid-row: 3 / 5;
+  }
+
+  .card:nth-child(4) {
+    grid-row: 3 / 5;
+  }
+
+  .card:nth-child(5) {
+    grid-row: 4 / 6;
+  }
 }
