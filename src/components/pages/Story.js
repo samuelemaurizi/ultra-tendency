@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import './Dashboard.css';
+import './Story.css';
 
 import Navbar from '../layout/Navbar';
 import Avatar from '../users/Avatar';
 
-const Dashboard = () => {
+const Story = () => {
   return (
     <div>
       <Navbar />
@@ -140,4 +140,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Story;

@@ -5,7 +5,7 @@ import './SocialLogin.css';
 const SocialLogin = ({ social }) => {
   return (
     <Fragment>
-      <Link to='/dashboard' className='social-btn'>
+      <Link to='/story' className='social-btn'>
         <i className={'fab fa-' + social}></i>
         Continue with {social}
       </Link>

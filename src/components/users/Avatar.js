@@ -1,12 +1,12 @@
 import React from 'react';
 import './Avatar.css';
 
-const Avatar = () => {
-  const userImg = 'https://loremflickr.com/320/240';
+const Avatar = ({ userImg }) => {
+  const fakeImg = 'https://loremflickr.com/320/240';
 
   return (
     <div className='avatar'>
-      <img className='avatar__img' src={userImg} alt='user avatar' />
+      <img className='avatar__img' src={fakeImg} alt='user avatar' />
     </div>
   );
 };
