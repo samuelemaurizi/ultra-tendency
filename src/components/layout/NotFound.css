@@ -1,7 +1,11 @@
 .not-found {
   height: 100vh;
-  padding-top: 4rem;
+  padding-top: 7rem;
   background: url('../../img/page-not-found.png') no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+}
+
+.not-found__btn {
+  border: none;
 }

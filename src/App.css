@@ -1,7 +1,16 @@
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+input {
+  color: var(--clr-gray-3);
+}
+
 .container {
   width: 90%;
   max-width: 1280px;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   margin: 0 auto;
 }
 
@@ -12,12 +21,6 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-}
-
-@media (min-width: 520px) {
-  .container {
-    /* padding: 0 4rem; */
-  }
 }
 
 @media (min-width: 1024px) {

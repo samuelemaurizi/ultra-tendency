@@ -7,7 +7,7 @@ import logo from '../../img/logo-s.png';
 import UserProfile from '../users/UserProfile';
 
 const Navbar = () => {
-  const [user, setUser] = useContext(UserContext);
+  const [user] = useContext(UserContext);
 
   return (
     <div className='nav'>
@@ -18,7 +18,7 @@ const Navbar = () => {
               <Link to='/trending' className='nav__logo'>
                 <img src={logo} alt='logo' />
               </Link>
-              <Link to='/channels' className='active'>
+              <Link to='/explore' className='active'>
                 <i className='fas fa-th-large'></i>
                 channels
               </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
             </NavLink>
           </div>
           <NavLink
-            activeClassName='active-link'
+            activeClassName='active-link active-explore-btn'
             to='/explore'
             className='btn nav__links-btn'
           >

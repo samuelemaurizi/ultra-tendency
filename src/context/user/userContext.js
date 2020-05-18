@@ -9,9 +9,5 @@ export const UserProvider = ({ children }) => {
     follow: false,
   });
 
-  return (
-    <UserContext.Provider value={[user, setUser]}>
-      {children}
-    </UserContext.Provider>
-  );
+  return <UserContext.Provider value={[user]}>{children}</UserContext.Provider>;
 };

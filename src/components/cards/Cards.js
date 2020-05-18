@@ -5,7 +5,7 @@ import { CategoriesContext } from '../../context/categories/categoriesContext';
 import Card from './Card';
 
 const Cards = () => {
-  const [categories, setCategories] = useContext(CategoriesContext);
+  const [categories] = useContext(CategoriesContext);
 
   return (
     <div className='container'>

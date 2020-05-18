@@ -8,8 +8,8 @@ import Comments from '../comments/Comments';
 import CommentForm from '../comments/CommentForm';
 
 const Story = () => {
-  const [users, setUsers] = useContext(UsersContext);
-  const [user, setUser] = useContext(UserContext);
+  const [users] = useContext(UsersContext);
+  const [user] = useContext(UserContext);
 
   return (
     <div>

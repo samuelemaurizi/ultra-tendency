@@ -6,7 +6,7 @@ import Avatar from '../users/Avatar';
 
 const Card = ({ category }) => {
   const { title, img, following, followers, contact } = category;
-  const [users, setUsers] = useContext(UsersContext);
+  const [users] = useContext(UsersContext);
 
   return (
     <div className='card'>

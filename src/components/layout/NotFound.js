@@ -1,12 +1,18 @@
 import React from 'react';
 import './NotFound.css';
 
-import Logo from './Logo';
+import logo from '../../img/logo-bs.png';
 
-const NotFound = () => {
+const NotFound = ({ history }) => {
+  const handleBack = () => {
+    history.goBack();
+  };
+
   return (
     <div className='container not-found'>
-      <Logo />
+      <button onClick={handleBack} className='btn not-found__btn'>
+        <img src={logo} alt='logo' />
+      </button>
     </div>
   );
 };

@@ -114,6 +114,11 @@
   background-color: var(--clr-primary-light-alpha);
 }
 
+.nav__links-btn.active-explore-btn {
+  color: var(--clr-primary-lighter);
+  background-color: var(--clr-primary);
+}
+
 .disabled {
   pointer-events: none;
 }
@@ -137,6 +142,7 @@
     display: block;
     margin-right: 0.5rem;
     padding: 0.3rem;
+    color: var(--clr-primary-lighter);
     border: none;
     background: none;
   }

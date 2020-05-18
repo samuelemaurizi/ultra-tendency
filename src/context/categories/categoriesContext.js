@@ -56,7 +56,7 @@ export const CategoriesProvider = ({ children }) => {
   ]);
 
   return (
-    <CategoriesContext.Provider value={[categories, setCategories]}>
+    <CategoriesContext.Provider value={[categories]}>
       {children}
     </CategoriesContext.Provider>
   );
