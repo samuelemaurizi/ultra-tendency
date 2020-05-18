@@ -7,7 +7,6 @@ export const RouterProvider = ({ children }) => {
 
   const onClick = (data) => {
     setLogin(data);
-    console.log('Router Context:', data);
   };
 
   return (

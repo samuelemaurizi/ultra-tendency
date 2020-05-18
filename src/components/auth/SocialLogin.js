@@ -12,7 +12,7 @@ const SocialLogin = ({ social }) => {
     e.preventDefault();
     onClick(true);
     setLoggedIn(true);
-    localStorage.setItem('loggeIn', true);
+    localStorage.setItem('loggedIn', true);
   };
   return (
     <div className='social-login'>

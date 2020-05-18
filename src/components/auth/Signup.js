@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     onClick(true);
     setLoggedIn(true);
-    localStorage.setItem('loggeIn', true);
+    localStorage.setItem('loggedIn', true);
   };
 
   return (
@@ -35,8 +35,6 @@ const Login = () => {
                   type='email'
                   placeholder='Email Address'
                   name='email'
-                  // value={email}
-                  // onChange={onChange}
                   required
                 />
               </div>
@@ -48,8 +46,6 @@ const Login = () => {
                   type='password'
                   placeholder='Password'
                   name='password'
-                  // value={password}
-                  // onChange={onChange}
                   minLength='6'
                 />
               </div>

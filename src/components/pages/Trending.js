@@ -3,7 +3,6 @@ import './Trending.css';
 
 import { UsersContext } from '../../context/users/usersContext';
 import { UserContext } from '../../context/user/userContext';
-import Navbar from '../layout/Navbar';
 import Comments from '../comments/Comments';
 import CommentForm from '../comments/CommentForm';
 
@@ -13,8 +12,6 @@ const Story = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
-
       <Fragment>
         <main>
           <header className='header'>
