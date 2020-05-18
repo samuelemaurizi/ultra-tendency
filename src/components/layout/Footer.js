@@ -15,16 +15,16 @@ const Footer = () => {
           <Link to='/contact'>Contact</Link>
         </div>
         <div className='footer__social'>
-          <Link to='https://www.facebook.com'>
+          <Link to='/facebook'>
             <i
               className='fab fa-facebook'
               style={{ color: 'var(--clr-gray-7)' }}
             ></i>
           </Link>
-          <Link to='https://twitter.com'>
+          <Link to='/twitter'>
             <i className='fab fa-twitter'></i>
           </Link>
-          <Link to='https://www.instagram.com'>
+          <Link to='/instagram'>
             <i className='fab fa-instagram'></i>
           </Link>
         </div>
