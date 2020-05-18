@@ -28,13 +28,6 @@
   flex-direction: row-reverse;
 }
 
-/* .card__icons {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  margin-top: 1rem;
-} */
-
 .usersIcons div {
   width: 45px;
   height: 45px;
@@ -91,6 +84,10 @@
 }
 
 @media (min-width: 1024px) {
+  .card {
+    text-align: center;
+  }
+
   .card:nth-child(2) {
     grid-row: 1 / 5;
   }
@@ -106,16 +103,23 @@
   .card:nth-child(5) {
     grid-row: 4 / 6;
   }
-}
 
-/* @media (min-width: 1160px) {
   .card__header {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .card__icons {
-    display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 1rem;
   }
-} */
+}
+
+@media (min-width: 1160px) {
+  .card__header {
+    flex-direction: row;
+  }
+
+  .card__icons {
+    margin-top: 0;
+  }
+}
