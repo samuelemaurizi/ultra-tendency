@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Cards.css';
 
 import { CategoriesContext } from '../../context/categories/categoriesContext';
+
 import Card from './Card';
 
 const Cards = () => {

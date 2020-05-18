@@ -15,21 +15,21 @@ export const CategoriesProvider = ({ children }) => {
       title: 'Climate',
       following: true,
       followers: '2M',
-      contact: 3,
+      username: ['Miriam Vog', 'Sophie Anderson', 'Charlie Fu'],
     },
     {
       img: nature,
       title: 'Nature',
       following: false,
       followers: '400K',
-      contact: 2,
+      username: ['Miriam Vog', 'Sophie Anderson'],
     },
     {
       img: cooking,
       title: 'Cooking',
       following: false,
       followers: '6.5M',
-      contact: 3,
+      username: ['Miriam Vog', 'Sophie Anderson', 'Charlie Fu'],
     },
 
     {
@@ -37,21 +37,21 @@ export const CategoriesProvider = ({ children }) => {
       title: 'Travel',
       following: true,
       followers: '104K',
-      contact: 2,
+      username: ['Miriam Vog', 'Sophie Anderson'],
     },
     {
       img: science,
       title: 'Science',
       following: true,
       followers: '203K',
-      contact: 3,
+      username: ['Miriam Vog', 'Sophie Anderson', 'Charlie Fu'],
     },
     {
       img: music,
       title: 'Music',
       following: true,
       followers: '80K',
-      contact: 2,
+      username: ['Miriam Vog', 'Sophie Anderson'],
     },
   ]);
 
