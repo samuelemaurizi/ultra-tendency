@@ -2,7 +2,7 @@ import React from 'react';
 import './Register.css';
 
 import Logo from './Logo';
-import Login from '../auth/Signup';
+import Signup from '../auth/Signup';
 
 const Landing = () => {
   return (
@@ -15,7 +15,7 @@ const Landing = () => {
             <p>Please create an account to continue!</p>
           </div>
           <div className='landing__content-auth'>
-            <Login />
+            <Signup />
           </div>
         </div>
       </div>

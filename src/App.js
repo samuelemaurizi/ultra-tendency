@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+
 import './App.css';
 
 import { UsersProvider } from './context/users/usersContext';
@@ -11,16 +11,14 @@ import Footer from './components/layout/Footer';
 function App() {
   return (
     <UserProvider>
-      <CategoriesProvider>
-        <UsersProvider>
-          <Router>
-            <Fragment>
-              <Routing />
-              <Footer />
-            </Fragment>
-          </Router>
-        </UsersProvider>
-      </CategoriesProvider>
+      <UsersProvider>
+        <CategoriesProvider>
+          <Fragment>
+            <Routing />
+            <Footer />
+          </Fragment>
+        </CategoriesProvider>
+      </UsersProvider>
     </UserProvider>
   );
 }

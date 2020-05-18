@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from 'react';
-import './Story.css';
+import './Trending.css';
 
 import { UsersContext } from '../../context/users/usersContext';
 import { UserContext } from '../../context/user/userContext';

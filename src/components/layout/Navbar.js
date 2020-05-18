@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 import { UserContext } from '../../context/user/userContext';
-import Logo from './Logo';
+import logo from '../../img/logo-s.png';
 import UserProfile from '../users/UserProfile';
 
 const Navbar = () => {
@@ -15,22 +15,22 @@ const Navbar = () => {
         <div className='container'>
           <div className='nav-user'>
             <div className='nav-user__links'>
-              <div>
-                <Logo />
-              </div>
-              <Link to='/login' className='active'>
+              <Link to='/trending' className='nav__logo'>
+                <img src={logo} alt='logo' />
+              </Link>
+              <Link to='/channels' className='active'>
                 <i className='fas fa-th-large'></i>
                 channels
               </Link>
-              <Link to='/login'>
+              <Link to='/bookmarks'>
                 <i className='fas fa-bookmark'></i>
                 bookmarks
               </Link>
-              <Link to='/login'>
+              <Link to='/overviw'>
                 <i className='fas fa-chart-pie'></i>
                 overview
               </Link>
-              <Link to='/login'>
+              <Link to='/widgets'>
                 <i className='fas fa-puzzle-piece'></i>
                 widgets
               </Link>
@@ -46,21 +46,41 @@ const Navbar = () => {
       <div className='container'>
         <div className='nav__links'>
           <div className='nav__links-categories'>
-            <Link to='/trending' className='active-link'>
+            <NavLink activeClassName='active-link' to='/trending'>
               Trending
-            </Link>
-            <Link to='/login'>For you</Link>
-            <Link to='/login'>Cooking</Link>
-            <Link to='/login'>Nature</Link>
-            <Link to='/login'>Science</Link>
-            <Link to='/login'>Travel</Link>
-            <Link to='/login'>Climate</Link>
-            <Link to='/login'>Music</Link>
-            <Link to='/login'>People</Link>
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              For you
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              Cooking
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              Nature
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              Science
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              Travel
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              Climate
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              Music
+            </NavLink>
+            <NavLink activeClassName='active-link' to='/login'>
+              People
+            </NavLink>
           </div>
-          <Link to='/explore' className='btn nav__links-btn'>
+          <NavLink
+            activeClassName='active-link'
+            to='/explore'
+            className='btn nav__links-btn'
+          >
             Explore
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

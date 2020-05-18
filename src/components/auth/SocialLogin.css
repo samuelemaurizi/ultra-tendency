@@ -19,7 +19,7 @@
 
 .social-btn {
   padding: var(--p1-5);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   color: var(--clr-gray-5);
@@ -35,13 +35,10 @@
   margin-right: 1rem;
 }
 
-.social-btn span {
-  display: block;
-}
-
 @media (min-width: 450px) {
   .social-btn {
     text-align: left;
+    font-size: 1.5rem;
   }
 
   .social-btn span {

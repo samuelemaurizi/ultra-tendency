@@ -1,7 +1,7 @@
 .landing {
   width: 100%;
   min-height: 100vh;
-  background: url('../../img/hero-bg.png') no-repeat;
+  background: url('../../img/Illustration.png') no-repeat;
   background-size: cover;
   background-position: top right;
   background-color: var(--clr-bg-light);
