@@ -1,24 +1,28 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useContext } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import './Signup.css';
 
+import { RouterContext } from '../../context/routing/routerContext';
 import SocialLogin from './SocialLogin';
 
 const Login = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-  });
+  const { onClick } = useContext(RouterContext);
 
-  const { email, password } = formData;
+  // const [formData, setFormData] = useState({
+  //   email: '',
+  //   password: '',
+  // });
 
-  const onChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const { email, password } = formData;
+
+  // const onChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.log(email, password);
+    onClick(true);
+    return <Redirect to='/trending' />;
   };
 
   return (
@@ -36,8 +40,8 @@ const Login = () => {
               type='email'
               placeholder='Email Address'
               name='email'
-              value={email}
-              onChange={onChange}
+              // value={email}
+              // onChange={onChange}
               required
             />
           </div>
@@ -46,11 +50,11 @@ const Login = () => {
           <div className='password'>
             <i className='fas fa-lock'></i>
             <input
-              type='passwordd'
+              type='password'
               placeholder='Password'
               name='password'
-              value={password}
-              onChange={onChange}
+              // value={password}
+              // onChange={onChange}
               minLength='6'
             />
           </div>

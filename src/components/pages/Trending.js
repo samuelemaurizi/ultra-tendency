@@ -13,7 +13,7 @@ const Story = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Fragment>
         <main>

@@ -6,7 +6,7 @@ import Cards from '../cards/Cards';
 const Explore = () => {
   return (
     <Fragment>
-      <Navbar />
+      {/* <Navbar /> */}
       <Cards />
     </Fragment>
   );
