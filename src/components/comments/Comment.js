@@ -8,7 +8,9 @@ const Comment = ({ comment }) => {
 
   return (
     <div className='comment-container'>
-      <Avatar userImg={image} />
+      <div className='comment__avatar'>
+        <Avatar userImg={image} />
+      </div>
       <div className='comment__body'>
         <p className='comment__body-name'>{name}</p>
         <p className='comment__body-text'>{text}</p>

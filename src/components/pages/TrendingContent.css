@@ -1,5 +1,5 @@
 /* 
-  HEADER
+  CONTENT HEADER
 */
 .header {
   position: relative;
@@ -67,11 +67,11 @@
   border-radius: 50%;
 }
 /* 
-  END HEADER
+  END CONTENT HEADER
 */
 
 /* 
-  CONTENT
+  CONTENT MAIN
 */
 .content {
   text-align: center;
@@ -127,7 +127,7 @@
   background: url('../../img/trending-main-2.jpg');
 }
 /* 
-  END CONTENT
+  END CONTENT MAIN
 */
 
 /* 

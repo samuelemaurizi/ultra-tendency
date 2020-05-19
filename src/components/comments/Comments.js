@@ -18,9 +18,11 @@ const Comments = ({ comments }) => {
           </div>
         </div>
       </div>
-      {comments.map((comment, i) => (
-        <Comment key={i} comment={comment} />
-      ))}
+      <div className='container'>
+        {comments.map((comment, i) => (
+          <Comment key={i} comment={comment} />
+        ))}
+      </div>
     </div>
   );
 };

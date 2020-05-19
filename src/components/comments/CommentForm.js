@@ -9,12 +9,14 @@ const CommentForm = ({ user }) => {
   };
 
   return (
-    <div className='form-container'>
-      <Avatar userImg={user.image} />
-      <form className='form-group' onSubmit={onSubmit}>
-        <input type='text' placeholder='Write something...' />
-        <button className='btn form-btn'>Submit</button>
-      </form>
+    <div className='container'>
+      <div className='form-container'>
+        <Avatar userImg={user.image} />
+        <form className='form-group' onSubmit={onSubmit}>
+          <input type='text' placeholder='Write something...' />
+          <button className='btn form-btn'>Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
