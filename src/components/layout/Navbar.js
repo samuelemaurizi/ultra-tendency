@@ -25,7 +25,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <button
-                className='mobile-header__burger'
+                className='btn mobile-header__burger'
                 onClick={() => setOpen(!open)}
               >
                 <i className='fas fa-bars'></i>
@@ -57,6 +57,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+
           <div className='nav'>
             <div className='nav-user-wrap'>
               <div className='container'>
@@ -90,7 +91,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className='container'>
+            <div className='container links-wrapper'>
               <div className='nav__links'>
                 <div className='nav__links-categories'>
                   <NavLink activeClassName='active-link' to='/trending'>

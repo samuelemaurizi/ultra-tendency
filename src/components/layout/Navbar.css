@@ -15,10 +15,14 @@
   width: 35px;
 }
 
+.mobile-header__burger {
+  background: none;
+  border: none;
+}
+
 .mobile-header__burger i {
   font-size: 2.5rem;
   color: var(--clr-bg-light);
-  cursor: pointer;
 }
 
 .mobile__links {
@@ -42,13 +46,13 @@
 
 .mobile__links-btn {
   align-self: flex-end;
+  padding: 1.2rem;
   font-size: 2rem;
   color: var(--clr-gray-3);
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-
-/* 
-  END MOBILE
-*/
 
 .nav-user__link {
   display: flex;
@@ -63,6 +67,13 @@
 .nav-user__link i {
   margin-right: 1rem;
   font-size: 1.5rem;
+}
+/* 
+  END MOBILE
+*/
+
+.nav {
+  display: none;
 }
 
 .nav-user-wrap {
@@ -104,17 +115,9 @@
   align-items: center;
 }
 
-.nav-user__right input {
-  /* margin-right: 0.5rem;
-  padding: 0.3rem;
-  border: none;
-  background: none; */
-  display: none;
-}
-
+.nav-user__right input,
 .nav-user__right i {
-  margin-right: 1rem;
-  color: var(--clr-bg-light);
+  display: none;
 }
 
 .nav__logo {
@@ -123,6 +126,14 @@
 
 .nav__logo img {
   width: 100%;
+}
+
+/* 
+  LINKS CATEGORIES
+*/
+
+.links-wrapper {
+  padding: 0 1rem;
 }
 
 .nav__links {
@@ -152,6 +163,7 @@
 
 .nav__links-categories a {
   padding: 1.2rem 0.5rem;
+  font-size: 0.9rem;
   text-decoration: none;
   color: var(--clr-gray-3);
 }
@@ -189,16 +201,50 @@
 .disabled {
   pointer-events: none;
 }
+/* 
+  LINKS CATEGORIES
+*/
 
-@media (max-width: 900px) {
-  .nav {
+@media (min-width: 450px) {
+  .nav-user__link {
+    align-self: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .mobile {
     display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav-user__link {
+    right: 20%;
   }
 }
 
 @media (min-width: 1024px) {
-  .mobile {
-    display: none;
+  .nav-user__right input,
+  .nav-user__right i {
+    display: block;
+  }
+
+  .nav-user__right input {
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    border: none;
+    background: none;
+  }
+
+  .nav-user__right i {
+    margin-right: 1rem;
+    color: var(--clr-bg-light);
+  }
+
+  .nav__links-categories a {
+    font-size: 1rem;
   }
 }
 
