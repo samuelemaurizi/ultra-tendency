@@ -1,5 +1,3 @@
-# Ultra Tendency coding challenge
-
 #### Tasks:
 
 #1 - implement the look and feel for the screens
