@@ -65,5 +65,4 @@ npm run dev
 1.0.0
 
 #### License
-
-This Frontend Challenge is an intellectual property of Ultra Tendency.
+MIT
