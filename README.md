@@ -2,7 +2,7 @@
 
 #### Tasks:
 
-#1 - implement the look and feel for the screens presented in [this link](https://invis.io/QSVXAZWFAC7) (not necessarily 100% identical)
+#1 - implement the look and feel for the screens
 
 #2 - try to separate the UIs into different components when possible
 
