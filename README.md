@@ -54,7 +54,7 @@ npm run dev
 
 #### Author
 
-[Samuele Maurizi](https://samuelemaurizi.net/)
+Samuele Maurizi
 
 #### Version
 
