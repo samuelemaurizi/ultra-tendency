@@ -10,8 +10,6 @@
 
 ## Introduction
 
-This is a Frontend Coding Challenge build in React.
-
 The App has been divided into three views: Register, Trending and Explore. The views have components in common, the Footer that is present in all the views and the Navbar that is present in Trending and Explore. Other elements that are repeated within the app or that could be reused are the Avatar, Comment, Social login, Card, User Profile and Logo component.
 
 On the first page there are three ways of accessing the app, with Facebook or Google account or the form to create a new one. In this phase I used the localStorage to check if the user has already logged in or not, if the response is positive, the user is redirected to the second page, otherwise the localStorage is updated as soon as the user logs in with the access methods mentioned above.
